@@ -1,0 +1,25 @@
+{
+  "name": "@core-foundation/tiny-num",
+  "version": "0.0.0",
+  "description": "number and numeric range utilities",
+  "keywords": ["js", "utils", "tiny-num"],
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "license": "MIT",
+  "main": "dist/core-foundation-tiny-num.cjs.js",
+  "module": "dist/core-foundation-tiny-num.esm.js",
+  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/core-foundation/tiny-num",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/segunadebayo/js-tookit/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  }
+}
