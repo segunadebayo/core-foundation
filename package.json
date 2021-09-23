@@ -15,8 +15,10 @@
   },
   "size-limit": [
     {
-      "path": "packages/tiny-num/**/*.esm.js",
-      "limit": "1.2KB"
+      "path": "packages/tiny-num/**/*.esm.js"
+    },
+    {
+      "path": "packages/tiny-helpers/**/*.esm.js"
     }
   ],
   "scripts": {
