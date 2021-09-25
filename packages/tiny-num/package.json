@@ -8,11 +8,11 @@
     "tiny-num"
   ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
+  "homepage": "https://github.com/segunadebayo/core-foundation#readme",
   "license": "MIT",
   "main": "dist/tiny-num.cjs.js",
   "module": "dist/tiny-num.esm.js",
-  "repository": "https://github.com/segunadebayo/js-tookit/core/tree/main/packages/tiny-num",
+  "repository": "https://github.com/segunadebayo/core-foundation/core/tree/main/packages/tiny-num",
   "sideEffects": false,
   "files": [
     "dist"
@@ -21,7 +21,7 @@
     "access": "public"
   },
   "bugs": {
-    "url": "https://github.com/segunadebayo/js-tookit/issues"
+    "url": "https://github.com/segunadebayo/core-foundation/issues"
   },
   "scripts": {
     "clean": "rimraf dist"

@@ -1,18 +1,18 @@
 {
-  "name": "tiny-helpers",
+  "name": "tiny-array",
   "version": "0.0.0",
-  "description": "",
+  "description": "JS array utilities",
   "keywords": [
     "js",
     "utils",
-    "tiny-helpers"
+    "tiny-array"
   ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
-  "homepage": "https://github.com/segunadebayo/core-foundation#readme",
+  "homepage": "https://github.com/segunadebayo/js-toolkit#readme",
   "license": "MIT",
-  "main": "dist/tiny-helpers.cjs.js",
-  "module": "dist/tiny-helpers.esm.js",
-  "repository": "https://github.com/segunadebayo/core-foundation/core/tree/main/packages/tiny-helpers",
+  "main": "dist/tiny-array.cjs.js",
+  "module": "dist/tiny-array.esm.js",
+  "repository": "https://github.com/segunadebayo/core-foundation/core/tree/main/packages/tiny-array",
   "sideEffects": false,
   "files": [
     "dist"

@@ -19,6 +19,9 @@
     },
     {
       "path": "packages/tiny-helpers/**/*.esm.js"
+    },
+    {
+      "path": "packages/tiny-list/**/*.esm.js"
     }
   ],
   "scripts": {
