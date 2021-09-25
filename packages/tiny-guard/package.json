@@ -1,18 +1,18 @@
 {
-  "name": "tiny-helpers",
+  "name": "tiny-guard",
   "version": "0.0.0",
   "description": "",
   "keywords": [
     "js",
     "utils",
-    "tiny-helpers"
+    "tiny-guard"
   ],
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "homepage": "https://github.com/segunadebayo/core-foundation#readme",
   "license": "MIT",
-  "main": "dist/tiny-helpers.cjs.js",
-  "module": "dist/tiny-helpers.esm.js",
-  "repository": "https://github.com/segunadebayo/core-foundation/core/tree/main/packages/tiny-helpers",
+  "main": "dist/tiny-guard.cjs.js",
+  "module": "dist/tiny-guard.esm.js",
+  "repository": "https://github.com/segunadebayo/core-foundation/core/tree/main/packages/tiny-guard",
   "sideEffects": false,
   "files": [
     "dist"

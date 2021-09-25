@@ -1,10 +1,8 @@
-import { is } from "./is"
-
 export const runIfFn = <T>(
   v: T,
   ...a: T extends (...a: any[]) => void ? Parameters<T> : never
 ): T extends (...a: any[]) => void ? ReturnType<T> : T => {
-  return is.func(v) ? v(...a) : v
+  return typeof v === "function" ? v(...a) : v
 }
 
 export const noop = () => {}

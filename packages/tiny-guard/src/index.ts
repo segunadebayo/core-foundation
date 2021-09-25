@@ -1,5 +1,4 @@
 export * from "./env"
 export * from "./event"
-export * from "./fn"
 export * from "./is"
 export * from "./supports"

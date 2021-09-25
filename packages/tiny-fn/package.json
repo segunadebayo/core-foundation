@@ -1,0 +1,29 @@
+{
+  "name": "tiny-fn",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "js",
+    "utils",
+    "tiny-fn"
+  ],
+  "author": "Segun Adebayo <sage@adebayosegun.com>",
+  "homepage": "https://github.com/segunadebayo/tiny-fn#readme",
+  "license": "MIT",
+  "main": "dist/tiny-fn.cjs.js",
+  "module": "dist/tiny-fn.esm.js",
+  "repository": "https://github.com/segunadebayo/tiny-fn/core/tree/main/packages/tiny-fn",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/segunadebayo/tiny-fn/issues"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  }
+}
