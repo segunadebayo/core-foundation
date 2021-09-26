@@ -1,7 +1,7 @@
 import type { Num } from "./types"
 
-export function valueToPercent(r: Num<"value" | "step" | "min" | "max">) {
-  return ((r.value - r.min) * 100) / (r.max - r.min)
+export function valueToPercent(v: number, r: Num<"step" | "min" | "max">) {
+  return ((v - r.min) * 100) / (r.max - r.min)
 }
 
 export function percentToValue(v: number, r: Num<"min" | "max">) {
