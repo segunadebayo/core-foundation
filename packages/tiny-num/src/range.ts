@@ -1,12 +1,12 @@
 import { countDecimals } from "./base"
 import type { Num, PartialBy, RangeOptions } from "./types"
-import { inc } from "./operations"
+import { increment } from "./operations"
 
 function toNumber(v: string | number) {
   return parseFloat(v.toString().replace(/[^\w.-]+/g, ""))
 }
 
-export function interpretRange(v: PartialBy<RangeOptions, "precision" | "step">) {
+export function range(v: PartialBy<RangeOptions, "precision" | "step">) {
   const { min, max, step = 1, precision = countDecimals(step), value } = v
   const val = value === "" ? 0 : toNumber(value)
   return {
@@ -24,7 +24,7 @@ export function toRangeArray(o: Num<"min" | "max" | "step">): number[] {
   const range: number[] = []
   while (i <= o.max) {
     range.push(i)
-    i = inc(i, o.step)
+    i = increment(i, o.step)
   }
   return range
 }
