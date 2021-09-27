@@ -1,11 +1,11 @@
-# tiny-fns
+# tiny-fn
 
 ## Installation
 
 ```sh
-yarn add tiny-fns
+yarn add tiny-fn
 # or
-npm i tiny-fns
+npm i tiny-fn
 ```
 
 ## Contribution
