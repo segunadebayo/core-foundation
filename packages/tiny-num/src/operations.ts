@@ -12,8 +12,8 @@ export function round(v: number, t?: number) {
   return t ? v.toFixed(t) : v.toString()
 }
 
-export function snapToStep(r: Num<"step" | "value">) {
-  const p = countDecimals(r.step)
-  const v = Math.round(r.value / r.step) * r.step
+export function snapToStep(value: number, step: number) {
+  const p = countDecimals(step)
+  const v = Math.round(value / step) * step
   return round(v, p)
 }
