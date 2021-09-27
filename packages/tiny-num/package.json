@@ -1,6 +1,6 @@
 {
   "name": "tiny-num",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "number and numeric range utilities",
   "keywords": [
     "js",
