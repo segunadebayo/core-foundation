@@ -2,7 +2,7 @@ import { countDecimals } from "./base"
 import type { Num, PartialBy, RangeOptions } from "./types"
 import { increment } from "./operations"
 
-function toNumber(v: string | number) {
+export function toNumber(v: string | number) {
   return parseFloat(v.toString().replace(/[^\w.-]+/g, ""))
 }
 
@@ -10,8 +10,11 @@ export function range(v: PartialBy<RangeOptions, "precision" | "step">) {
   const { min, max, step = 1, precision = countDecimals(step), value } = v
   const val = value === "" ? 0 : toNumber(value)
   return {
+    min,
+    max,
+    step,
     precision,
-    maxPrecision: Math.max(countDecimals(step), precision),
+    maxPrecision: Math.max(countDecimals(val), countDecimals(step), precision),
     value: val,
     isInRange: val >= min && val <= max,
     isAtMin: val === min,
