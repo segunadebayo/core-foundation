@@ -3,9 +3,8 @@ export function toArray<T>(v: T | T[] | undefined | null): T[] {
   return Array.isArray(v) ? v : [v]
 }
 
-export function fromLength<T>(length: number, cb?: (index: number) => T) {
-  const arr = Array.from(Array(length).keys())
-  return cb ? arr.map(cb) : arr
+export function fromLength(length: number) {
+  return Array.from(Array(length).keys())
 }
 
 export function first<T>(v: T[]): T | undefined {
