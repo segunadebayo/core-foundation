@@ -2,4 +2,4 @@
 "tiny-guard": patch
 ---
 
-Update element type checks
+Update type guards to match `js-toolkit`

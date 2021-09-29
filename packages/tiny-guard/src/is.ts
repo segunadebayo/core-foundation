@@ -1,12 +1,9 @@
-const t = (v: any) => Object.prototype.toString.call(v).slice(8, -1)
-
 export const is = {
-  arr: (v: any): v is Array<any> => Array.isArray(v),
+  arr: (v: any): v is any[] => Array.isArray(v),
   bool: (v: any): v is boolean => v === true || v === false,
-  obj: (v: any): v is Record<string, any> => t(v) === "Object",
-  num: (v: any): v is number => t(v) === "Number" && !Number.isNaN(v),
-  str: (v: any): v is string => t(v) === "String",
-  func: (v: any): v is Function => t(v) === "Function",
-  elem: (v: any): v is HTMLElement =>
-    v != null && /(HTML|SVG)\w+Element/.test(t(v)) && v.nodeType === Node.ELEMENT_NODE,
+  obj: (v: any): v is Record<string, any> => !(v == null || typeof v !== "object" || is.arr(v)),
+  num: (v: any): v is number => typeof v === "number" && !Number.isNaN(v),
+  str: (v: any): v is string => typeof v === "string",
+  func: (v: any): v is Function => typeof v === "function",
+  elem: (v: any): v is HTMLElement => is.obj(v) && v.nodeType === Node.ELEMENT_NODE && is.str(v.nodeName),
 }
