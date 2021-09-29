@@ -7,5 +7,6 @@ export const is = {
   num: (v: any): v is number => t(v) === "Number" && !Number.isNaN(v),
   str: (v: any): v is string => t(v) === "String",
   func: (v: any): v is Function => t(v) === "Function",
-  elem: (v: any): v is HTMLElement => /(HTML|SVG)\w+Element/.test(t(v)) && v.nodeType === Node.ELEMENT_NODE,
+  elem: (v: any): v is HTMLElement =>
+    v != null && /(HTML|SVG)\w+Element/.test(t(v)) && v.nodeType === Node.ELEMENT_NODE,
 }
