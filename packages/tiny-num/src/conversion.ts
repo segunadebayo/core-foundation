@@ -5,7 +5,7 @@ export function valueToPercent(v: number, r: Num<"step" | "min" | "max">) {
 }
 
 export function percentToValue(v: number, r: Num<"min" | "max">) {
-  return r.min + ((r.max - r.min) * v) / 100
+  return r.min + (r.max - r.min) * v
 }
 
 export function transform(a: [number, number], b: [number, number]) {
