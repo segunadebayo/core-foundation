@@ -1,5 +1,11 @@
 # tiny-num
 
+## 0.0.3
+
+### Patch Changes
+
+- afd7ec6: Fix issue with percent-to-value
+
 ## 0.0.2
 
 ### Patch Changes
