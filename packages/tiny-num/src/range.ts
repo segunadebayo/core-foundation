@@ -10,12 +10,16 @@ export function valueOf(v: string | number) {
 export function range(v: PartialBy<RangeOptions, "precision" | "step">) {
   const { min, max, step = 1, precision = countDecimals(step), value } = v
   const val = value === "" ? 0 : valueOf(value)
+
+  const stepPrecision = countDecimals(step)
+  const valuePrecision = isNaN(val) ? stepPrecision : Math.max(countDecimals(val), stepPrecision)
+
   return {
     min,
     max,
     step,
     precision,
-    maxPrecision: Math.max(countDecimals(val), countDecimals(step), precision),
+    maxPrecision: Math.max(valuePrecision, precision),
     value: val,
     isInRange: val >= min && val <= max,
     isAtMin: val === min,
