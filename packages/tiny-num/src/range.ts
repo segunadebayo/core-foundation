@@ -3,7 +3,8 @@ import type { Num, PartialBy, RangeOptions } from "./types"
 import { increment } from "./operations"
 
 export function valueOf(v: string | number) {
-  return parseFloat(v.toString().replace(/[^\w.-]+/g, ""))
+  const num = parseFloat(v.toString().replace(/[^\w.-]+/g, ""))
+  return !isNaN(num) ? num : 0
 }
 
 export function range(v: PartialBy<RangeOptions, "precision" | "step">) {
