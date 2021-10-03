@@ -1,5 +1,11 @@
 # tiny-guard
 
+## 0.0.3
+
+### Patch Changes
+
+- 8f44282: Split out functions for is type guard
+
 ## 0.0.2
 
 ### Patch Changes
